@@ -17,7 +17,7 @@ int stringLength(char * str) {
   return length;
 }
 
-//given a string, return the reverse string
+//given a string, return the reverse string in a provided buffer
 char * reverseString(char * str, char * buff) {
   int length = stringLength(str);
   for (int i = 0; i < length; i++) {
