@@ -11,6 +11,7 @@ bool isPalindrome(char * str) {
   buff = (char *) malloc(strlen(str));
   reverseString(str, buff);
   bool result = (strcmp(str, buff) == 0);
+  free(buff);
   return result;
 }
 //converts a string to lowercase
