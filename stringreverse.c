@@ -26,16 +26,3 @@ char * reverseString(char * str, char * buff) {
   buff[length + 1] = '\0';
   return buff;
 }
-
-int main() {
-  char input[20];
-  char * buff;
-  printf("Enter String:");
-  scanf("%s", input);
-  buff = (char *) malloc(stringLength(input) + 1);
-  reverseString(input, buff);
-  printf(buff);
-  free(buff);
-  printf("\n");
-  return 0;
-}
